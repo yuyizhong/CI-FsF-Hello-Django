@@ -11,9 +11,10 @@
 <body>
     <h1>Add a Todo Item:</h1>
     <form method="post" action="add">
+        {% csrf_token %}
         <div>
             <p>
-                <lable for="id_name">Name: </lable> 
+                <lable for="id_name">Name: </lable>
                 <input type="text" id="id_name" name="item_name" />
             </p>
         </div>
